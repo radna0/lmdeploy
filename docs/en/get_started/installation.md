@@ -37,7 +37,7 @@ The release frequency of LMDeploy is approximately once or twice monthly. If you
 If you are using the PyTorch Engine for inference, the installation from the source is quite simple:
 
 ```shell
-git clone https://github.com/InternLM/lmdeploy.git
+git clone https://github.com/radna0/lmdeploy.git
 cd lmdeploy
 pip install -e .
 ```

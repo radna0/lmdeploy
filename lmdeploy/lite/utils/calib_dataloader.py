@@ -94,11 +94,11 @@ def get_neuralmagic(tokenizer, nsamples, seed, seqlen):
     )
 
     # split 0.90 for training and 0.10 for validation
-    traindata = data["train"][: int(nsamples)]
-    valdata = data["train"][int(nsamples) :]
+    traindata = data["text"][: int(nsamples)]
+    valdata = data["text"][int(nsamples) :]
 
-    trainenc = tokenizer("\n\n".join(traindata["text"]), return_tensors="pt")
-    testenc = tokenizer("\n\n".join(valdata["text"]), return_tensors="pt")
+    trainenc = tokenizer("\n\n".join(traindata), return_tensors="pt")
+    testenc = tokenizer("\n\n".join(valdata), return_tensors="pt")
 
     import random
 

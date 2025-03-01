@@ -231,8 +231,8 @@ def calibrate(model: str,
         work_dir (str): The working directory for outputs.
     """
 
-    assert calib_dataset in ['c4', 'ptb', 'wikitext2', 'pileval'], \
-        'Support only `c4`, `ptb`, `wikitext2` or `pileval`.'
+    assert calib_dataset in ['c4', 'ptb', 'wikitext2', 'pileval', 'neuralmagic'], \
+        'Support only `c4`, `ptb`, `wikitext2` or `pileval` or `neuralmagic`.'
 
     model_type, _ = get_task(model)
     make_compatible_internvl_config(model)
